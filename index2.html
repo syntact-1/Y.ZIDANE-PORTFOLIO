@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha256-3gn3jjwDEBQ3sWwlgheblJDF8jZRN7d/qLCnr7hHF6I=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <h1 class="logo">SYNTACT</h1>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+<!-- Main Content -->
+<div class="main-content">
+    <div class="content">
+        <h1 class="main-heading"> HI I'M</h1>
+        <h1 class="main-heading">YOUSSEF ZIDANE</h1>
+        <p class="role">Front End Developer</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></a>
+        </div>
+        <!-- Download CV Button -->
+        <div class="cv-button">
+            <a href="CV.pdf" download><button>Download CV</button></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="imgs/me.jpg" alt="Your Image" width="300">
+    </div>
+</div>
+
+
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2 class="projects-heading">My Projects</h2>
+        <div class="project-box">
+            <img src="imgs/CALC.jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/nike site.jpg" >
+        </div>
+        <div class="project-box">
+            <img src="imgs/responsive form.jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/Untitled Project (1).jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/Untitled Project (2).jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/Untitled Project (3).jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/Untitled Project.jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/Web_Photo_Editor.jpg">
+        </div>
+        <div class="project-box">
+            <img src="imgs/Untitled Project (4).jpg">
+        </div>
+    </section>
+<!-- Payhip Store Link -->
+<div class="payhip-link">
+    <p>Explore more on my Payhip store to Selling programming books: <a href="https://payhip.com/youssefzidane" target="_blank">Visit Store</a></p>
+</div>
+    <!-- About Me Section -->
+    <section class="about-me-section">
+        <div class="about-me-content">
+            <h2>About Me</h2>
+            <p>Hello, my name is Youssef Zidan. I am 16 years old. I am a front-end developer for websites. I have 3 years of experience in the field of front-end development. If you want to communicate or inquire about something, see the section below. </p>
+        </div>
+    </section>
+
+    <!-- Communication Section -->
+<section class="communication-section">
+    <div class="communication-content">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out if you have any questions or collaboration opportunities.</p>
+        <ul>
+            <li>Email: youssefzidane480@gmail.com</li>
+            <a href="https://wa.me/01016106478"><li style="color: rgb(100, 173, 237);font-size: 22px;"><i class='bx bxl-whatsapp-square'></i>whats app</li></a>
+        </ul>
+    </div>
+</section>
+<script>
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.main-heading, .role, .social-icons, .cv-button, .image', { delay: 200 });
+    ScrollReveal().reveal('.project-box', { delay: 200, interval: 300 });
+    ScrollReveal().reveal('.about-me-content, .communication-content', { delay: 200 });
+</script>
+</body>
+</html>

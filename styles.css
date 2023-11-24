@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ecf0f1;
+    margin-right: 10px;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #2ecc71;
+}
+
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #ecf0f1;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out;
+
+}
+
+.main-heading {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.image img {
+    width: 300px;
+    animation: fadeInRight 1s ease-out;
+}
+/* Social Media Icons Styles */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #3498db;
+    margin-right: 15px;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #2ecc71;
+}
+
+
+/* Projects Section Styles */
+.projects-section {
+    text-align: center;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line on smaller screens */
+}
+
+.projects-heading {
+    font-size: 1.5em;
+    color: #333;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.project-box {
+    width: 250px; /* Adjust the width of each project box */
+    margin: 10px;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border-radius for rounded corners if desired 4*/
+    transition: .5s;
+}
+.project-box img:hover{
+    scale: 1.08;
+}
+
+/* CV Button Styles */
+.cv-button {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* About Me Section Styles */
+.about-me-section {
+    background-color: #3334355b; /* Slightly darker color than the background */
+    color: #ecf0f1;
+    padding: 50px 20px;
+}
+
+.about-me-content {
+    max-width: 800px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-me-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-me-content p {
+    font-size: 1.2em;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Communication Section Styles */
+.communication-section {
+    background-color: #ecf0f1; /* Same shade as the page background */
+    color: #333;
+    padding: 50px 20px;
+}
+
+.communication-content {
+    max-width: 800px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.communication-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.communication-content p {
+    font-size: 1.2em;
+}
+
+.communication-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.communication-content li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.communication-content a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.communication-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Adjust the styles for smaller screens */
+
+    /* Main Content Styles */
+    .main-content {
+        flex-direction: column;
+    }
+
+    /* Social Media Icons Styles */
+    .social-icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* CV Button Styles */
+    .cv-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .image img{
+        margin-bottom: 120px    ;
+    }
+    .navbar .nav-container .nav-links{
+        margin-right: 130px;
+    }
+    .logo{
+        font-size: 18px;
+    }
+}

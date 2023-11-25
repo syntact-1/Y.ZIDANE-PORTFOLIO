@@ -261,7 +261,9 @@ button:hover {
     .social-icons {
         text-align: center;
         margin-top: 20px;
-        font-size:29px
+    }
+    .social-icons i{
+        font-size:23px;
     }
     /* CV Button Styles */
     .cv-button {
